@@ -1,0 +1,30 @@
+{
+  "name": "n-gon",
+  "version": "1.0.0",
+  "description": "2-d physics rogue-lite platformer shooter",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^25.9.8",
+    "electron-builder": "^26.0.12"
+  },
+  "author": "Ross Landgreen",
+  "license": "MIT",
+  "build": {
+    "appId": "com.n-gon.app",
+    "productName": "N-gon",
+    "files": [
+      "**/*"
+    ],
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": [ "nsis", "portable" ],
+      "icon": "icon.ico"
+    }
+  }
+}
